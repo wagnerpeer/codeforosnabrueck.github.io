@@ -1,0 +1,18 @@
+{% assign index = include.index %}
+
+<article class="uk-article uk-panel uk-panel-box uk-text-center">
+
+    <h2 class="uk-article-title">
+        <a href="{{ site.posts[index].url }}">{{ site.posts[index].title }}</a>
+    </h2>
+
+    <p class="uk-article-meta">
+      Verfasst von {{ site.posts[index].author }} am {{ site.posts[index].date | date: "%-d %B %Y" }}
+       in <a href="/blog/">{{ site.posts[index].category }}</a>
+     </p>
+
+    <p>{{ site.posts[index].excerpt }}</p>
+    <p>
+      <a class="uk-button uk-button-primary" href="{{ site.posts[index].url }}">weiterlesen&hellip;</a>
+    </p>
+</article>

@@ -1,0 +1,53 @@
+# Site settings
+title: Code for Osnabrück
+email:
+description: > # this means to ignore newlines until "baseurl:"
+  Jede Woche treffen sich in ganz Deutschland "Code for Germany" Teams, die gemeinsam an nützlichen Anwendungen und Visualisierungen rund um offene Daten und digitale Werkzeuge für Bürgerinnen arbeiten.
+  Lokale Gruppen, bestehend aus Programmiererinnen, Designern und Open Data Interessierten, erproben, wie Code und Software dabei helfen können ihre Stadt und Nachbarschaft zu verbessern.
+  Auch in Osnabrück besteht eine Gruppe aus interessierten Nutzern, die sich "Code for Osnabrück" nennt.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "codeforosnabrueck.org" # the base hostname & protocol for your site
+city: Osnabrück
+github: "https://github.com/codeforosnabrueck/"
+twitter: "https://twitter.com/OKLabOsnabrueck/"
+twittername: OKLabOsnabrueck
+meetup: "https://www.meetup.com/de-DE/preview/OK-Lab-Osnabruck/"
+logo: "/img/logo.svg"
+background: "/img/background.jpg"
+blogimg: "/img/ortsschild.png" # The image displayed on /blog/
+
+# Config for fetching the next meetup event.
+meetup_group: OK-Lab-Osnabruck
+meetup_api_key: 4b364c4c47f751d5df6e62335a5f75
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+keywords:
+  - "Osnabrück"
+  - "Open Data"
+  - "Offene Daten"
+  - "Code"
+  - "Code for Münster"
+  - "E-Government"
+  - "Transparenz"
+  - "Bürgerbeteiligung"
+  - "Stadtentwicklung"
+  - "Visualisierung"
+  - "Stadt"
+
+collections:
+  projekte:
+      output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      category: "blog"
+
+#gems:
+        #  - jekyll-feed

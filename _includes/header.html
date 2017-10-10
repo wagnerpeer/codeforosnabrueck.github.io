@@ -1,0 +1,26 @@
+<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+    <nav class="uk-navbar uk-margin-large-bottom">
+        <a class="uk-navbar-brand uk-hidden-small" href="/index.html"><img style="height:40px" src={{ site.logo | absolute_url }} /></a>
+        <ul class="uk-navbar-nav uk-hidden-small">
+            <li>
+                <a href="/">Startseite</a>
+            </li>
+            <li>
+                <a href="{{ "/projekte/" | prepend: site.baseurl }}"> Projekte</a>
+            </li>
+            <li>
+                <a href="{{ "/blog/" | prepend: site.baseurl }}"></i> Blog</a>
+            </li>
+            <li>
+                <a target="_blank" href={{ site.meetup }}><i class="uk-icon-external-link"></i> Nächstes Treffen (meetup.com)</a>
+            </li>
+            <li>
+                <a target="_blank" href={{ site.github }}><i class="uk-icon-external-link"></i> Quellcode auf Github</a>
+            </li>
+        </ul>
+        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+        <div class="uk-navbar-brand uk-navbar-center uk-visible-small">{{ site.title }}</div>
+        {% include offcanvas.html %}
+
+    </nav>

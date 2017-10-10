@@ -1,0 +1,42 @@
+---
+layout: default
+page_class: blog
+category: blog
+---
+
+<div class="uk-grid" data-uk-grid-margin>
+  <div class="uk-width-1-1">
+
+    <h2>
+      <a href="/blog/">Stadtgeschichten aus {{ site.city }}</a>
+    </h2>
+
+    <hr class="uk-grid-divider">
+    <article class="uk-article">
+
+        <h1 class="uk-article-title">
+            {{ page.title }}
+        </h1>
+
+        <p class="uk-article-meta">
+          Verfasst von {{page.author}} am {{page.date || date: "%d.%m.%Y"}}
+           in "{{page.category}}"
+          <a href="https://twitter.com/share"
+             class="twitter-share-button"
+             data-via="{{ site.twittername }}"
+             data-count="none"
+             data-related="{{ site.twittername }}"
+             data-uk-tooltip
+             title="Diesen Artikel twittern">
+          </a>
+         </p>
+
+        <p>{{ content }}</p>
+
+    </article>
+    <hr class="uk-grid-divider">
+
+    {% include blog_pagination.html %}
+
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<footer class="site-footer">
+  <div class="tm-footer">
+
+      <div class="uk-container uk-container-center uk-text-center">
+
+          <ul class="uk-subnav uk-subnav-line uk-flex-center">
+            <li>
+                <a href={{ site.github }}>GitHub</a>
+            </li>
+            <li>
+              <!-- Create link to members page of github organization from link to the oranization. -->
+              <!-- Probably a little hackish, but works. -->
+              {% assign parts = site.github | split: '/'}}%}
+              {% assign people_link = "https://" | append: parts[2] | append: '/' | append: 'orgs' | append: '/' | append: parts[3] | append: '/' | append: 'people' %}
+              <a href="{{ people_link }}">Komplette Mitgliederliste</a>
+            </li>
+
+            {% if site.twitter %}
+            <li>
+              <a  href={{ site.twitter }}>Twitter</a>
+            </li>
+            {% endif %}
+            {% if site.facebook %}
+            <li>
+              <a href={{ site.facebook }}>Facebook</a>
+            </li>
+            {% endif %}
+            {% if site.meetup %}
+            <li>
+              <a href={{ site.meetup }}>Meetup</a>
+            </li>
+            {% endif %}
+            <li>
+              <a href="/impressum/">Impressum</a>
+            </li>
+          </ul>
+
+          <div class="uk-panel">
+            <p>Fotos von
+            {% for img_source in site.data.img_sources %}
+              <a href={{ img_source.src }} target="_blank">{{ img_source.owner }}</a>
+            {% endfor %}
+            </p>
+            <a href="/">
+              <img src={{ site.logo | absolute_url }} width=25%>
+            </a>
+          </div>
+
+      </div>
+  </div>
+</footer>
