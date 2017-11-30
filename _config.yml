@@ -6,15 +6,14 @@ description: > # this means to ignore newlines until "baseurl:"
   Lokale Gruppen, bestehend aus Programmiererinnen, Designern und Open Data Interessierten, erproben, wie Code und Software dabei helfen können ihre Stadt und Nachbarschaft zu verbessern.
   Auch in Osnabrück besteht eine Gruppe aus interessierten Nutzern, die sich "Code for Osnabrück" nennt.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "codeforosnabrueck.github.io" # the base hostname & protocol for your site
-city: Osnabrück
+url: "codeforosnabrueck.org" # the base hostname & protocol for your site
 github: "https://github.com/codeforosnabrueck/"
 twitter: "https://twitter.com/OKLabOsnabrueck/"
-twittername: OKLabOsnabrueck
+twittername: codeformuenster
 meetup: "https://www.meetup.com/de-DE/preview/OK-Lab-Osnabruck/"
 logo: "/img/logo.svg"
 background: "/img/background.jpg"
-blogimg: "/img/ortsschild.png" # The image displayed on /blog/
+blogimg: "/img/ortsschild.png"
 
 # Config for fetching the next meetup event.
 meetup_group: OK-Lab-Osnabruck
