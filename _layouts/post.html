@@ -19,8 +19,8 @@ category: blog
         </h1>
 
         <p class="uk-article-meta">
-          Verfasst von {{page.author}} am {{page.date || date: "%d.%m.%Y"}}
-           in "{{page.category}}"
+          Verfasst von {{ page.author }} am {{ page.date | date: "%d.%m.%Y" }}
+           in "{{ page.category }}"
           <a href="https://twitter.com/share"
              class="twitter-share-button"
              data-via="{{ site.twittername }}"

@@ -8,27 +8,28 @@ whatever fits you lab. To get the meetup API key you have to go to  https://secu
 See a live example at [codeforosnabrueck.org](http://www.codeforosnabrueck.org).
 The code was originally forked from [Münster's page](https://github.com/codeformuenster/codeformuenster.github.io)
 
-Another cool thing is taht the fancy project list on the frontpage can automatically be fetched from the GitHub API by reading all the repositories of an organization.
+Another cool thing is that the fancy project list on the front page can automatically be fetched from the GitHub API by reading all the repositories of an organization.
 
-We are generating a static html page that can be hosted on github pages.
+We are generating a static HTMLpage that can be hosted on githubpages.
 
 
 ## How does it work?
 
 * It would generate too many requests to the GitHub API if we would call the GitHub API live on every user request,  
 * That is why there is a php script in this repository that can be called from the command line.
-* It downloads all the repository meta data from GitHub and creates a summary json file that is then used by the static html frontpage.
+* It downloads all the repository meta data from GitHub and creates a summary json file that is then used by the static HTML front page.
 
 
 # Step 1: Install jekyll locally to simulate github pages
 
-## Install & run using Docker
+## Install & run using Docker (experimental)
 
 (These instructions are for Linux. On OSX/Windows, Docker has to be installed
 differently.)
 
-* Install [Docker](https://docs.docker.com/installation/#installation) and [Fig](http://www.fig.sh/).
-* Then run: `sudo fig up`
+* Install [Docker Engine](https://docs.docker.com/install/).
+* Install [Docker Compose](https://docs.docker.com/compose/install/).
+* Then run: `sudo docker compose up`
 
 The website is now available at [http://localhost:4000](http://localhost:4000). Posts and stylesheets will automatically be recompiled on change.
 
