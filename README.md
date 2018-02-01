@@ -128,9 +128,10 @@ Then use your favorite screenshot tool to take screenshots and then issue the fo
 
 # Making adaptions
 
-The project uses [`jQuery`](https://jquery.com/) and [`UIKit`](https://getuikit.com/) for most of the responsive design and intercation,
+The project uses [`jQuery`](https://jquery.com/) and [`UIKit`](https://getuikit.com/) for most of the responsive design and interaction,
 so if you want to change something, check out whether it can be achieved without adding further dependencies. Also try to keep site configurable and add lab specific
 information only in the `_config.yml` and read it out in the template later.
 Don't hard code things.
+For adding javascript stick to [Standard style](https://standardjs.com/).
 
 If you add new images to your page you should add the sources to the `/_data/img_sources.yml` file. The sources will then be automatically displayed in the footer of the page.
