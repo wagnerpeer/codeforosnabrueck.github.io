@@ -29,7 +29,7 @@ differently.)
 
 * Install [Docker Engine](https://docs.docker.com/install/).
 * Install [Docker Compose](https://docs.docker.com/compose/install/).
-* Then run: `sudo docker compose up`
+* Then run: `docker-compose up`
 
 The website is now available at [http://localhost:4000](http://localhost:4000). Posts and stylesheets will automatically be recompiled on change.
 
