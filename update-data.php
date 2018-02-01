@@ -234,8 +234,8 @@ class UpdateData {
         $screenshot_file = "screenshots/$repoName.jpg";
 
         if (!file_exists($screenshot_file)) {
-          echo "- creating screenshot: $url => screenshots/$repoName.jpg\n";
-          $create=`phantomjs update-screenshot.js $url screenshots-large/$repoName.png`;
+          echo "- creating screenshot: $url => /screenshots/$repoName.jpg\n";
+          $create=`phantomjs update-screenshot.js $url /screenshots-large/$repoName.png`;
           log_error("- command output: $create");
           $some=`convert screenshots-large/$repoName.png  -background white -resize 600x -crop 600x400+0+0 -strip -quality 80 $screenshot_file`;
 
@@ -243,7 +243,11 @@ class UpdateData {
 
           echo "- screenshot already there.\n";
         }
-        if(file_exists($screenshot_file)) { $image = $screenshot_file;}
+
+        if(file_exists($screenshot_file)) {
+          $image = $screenshot_file;
+        }
+
       } elseif ($image) {
         echo "- found screenshot in README: $image\n";
       } else {
@@ -259,7 +263,8 @@ class UpdateData {
 		      'total_tasks'   => $total,
 		      'closed_tasks'  => $closed,
 		      'users'         => $users,
-		      'image'         => $image,
+          // 'image'         => `/$image`,
+		      'image'         => "/$image",
 					'html_url'			=> $repo['html_url'],
 					'url' 				  => $url,
 					'forum' 			  => $metaData['forum'],
