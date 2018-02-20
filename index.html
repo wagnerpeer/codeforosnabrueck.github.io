@@ -24,6 +24,11 @@ title: site.title
     <span class="uk-icon-facebook-official uk-icon-large"></span>
   </a>
   {% endif %}
+  {% if site.youtube %}
+  <a target="_blank" class="uk-button micon youtube-play" data-uk-tooltip title="youtube" href={{ site.youtube }}>
+    <span class="uk-icon-youtube-play uk-icon-large"></span>
+  </a>
+  {% endif %}
   {% if site.meetup %}
   <a target="_blank" class="uk-button micon meetup" data-uk-tooltip title="meetup" href={{ site.meetup }}>
     <span class="uk-icon-maxcdn uk-icon-large"></span>
