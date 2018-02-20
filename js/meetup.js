@@ -15,7 +15,7 @@ const getVenueFromResult = (result) => {
 }
 
 const setMeetupHtml = (result) => {
-  $("#date span").html(new Date(result.time).toLocaleDateString())
+  $("#date span").html(new Date(result.time).toLocaleDateString('de-DE'))
   $("#next-meetup #title").html(result.name)
   $("#next-meetup #venue").html(getVenueFromResult(result))
   $("#next-meetup #description").html(result.description)
