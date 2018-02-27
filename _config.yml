@@ -1,5 +1,6 @@
 # Site settings
 title: Code for Osnabrück
+city: Osnabrück
 email:
 description: > # this means to ignore newlines until "baseurl:"
   Jede Woche treffen sich in ganz Deutschland "Code for Germany" Teams, die gemeinsam an nützlichen Anwendungen und Visualisierungen rund um offene Daten und digitale Werkzeuge für Bürgerinnen arbeiten.
