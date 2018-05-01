@@ -1,9 +1,9 @@
 # The "Code for Osnabrück" Homepage
 
 This is the code for the "Code for Osnabrück" Homepage, but it can easily be
-customized to serve as a homepage for other labs. Basically all Configuration
+customized to serve as a homepage for other labs. Basically all configuration
 can be done in the `_config.yml` file. Simply replace all values with
-whatever fits you lab. To get the meetup API key you have to go to  https://secure.meetup.com/meetup_api/key/.
+whatever fits your lab. To get the meetup API key, you have to go to https://secure.meetup.com/meetup_api/key/.
 
 See a live example at [codeforosnabrueck.org](http://www.codeforosnabrueck.org).
 The code was originally forked from [Münster's page](https://github.com/codeformuenster/codeformuenster.github.io)
@@ -22,7 +22,7 @@ We are generating a static HTMLpage that can be hosted on githubpages.
 
 # Step 1: Install jekyll locally to simulate github pages
 
-## Install & run using Docker (experimental)
+## Install & run using Docker (recommended)
 
 (These instructions are for Linux. On OSX/Windows, Docker has to be installed
 differently.)
@@ -33,7 +33,7 @@ differently.)
 
 The website is now available at [http://localhost:4000](http://localhost:4000). Posts and stylesheets will automatically be recompiled on change.
 
-## Non-Docker Install
+## Non-Docker Install & Run
 
 This site is build using jekyll.
 
@@ -44,6 +44,14 @@ This site is build using jekyll.
 Install dependencies:
 
     bundle install
+
+Compile and serve the page:
+
+    bundle exec jekyll serve
+
+The website is now available at http://localhost:4000
+
+Posts and stylesheets will automatically be recompiled on change.
 
 # Step 2: Generate the Homepage
 
@@ -82,11 +90,11 @@ filled out in Github (The "Description" will used as project description and the
 
 First you need to install "shutter", so that it can automatically create the screenshots of your repositories:
 
-    sudo apt-get install shutter
+    sudo apt install shutter
 
 For using curl with PHP
 
-    sudo apt-get install php-curl
+    sudo apt install php-curl
 
 Then you can generate the metadata json file that is used to render the repository list on the frontpage, by running:
 
@@ -94,18 +102,8 @@ Then you can generate the metadata json file that is used to render the reposito
 
 Make sure that all the members of your organization set their visisbility to public so they can be feteched from the API without authentification.
 
-# Step 3: Run it (for development)
 
-Compiles the page after saving a code change:
-
-    bundle exec jekyll serve
-
-The website is now available at http://localhost:4000
-
-Now you can make design changes, etc.
-
-
-# Step 4: deploy it to github
+# Step 3: deploy it to github
 
 * Commit the files  _json/*.json_
 * Commit the file _index.html_
@@ -129,9 +127,9 @@ Then use your favorite screenshot tool to take screenshots and then issue the fo
 # Making adaptions
 
 The project uses [`jQuery`](https://jquery.com/) and [`UIKit`](https://getuikit.com/) for most of the responsive design and interaction,
-so if you want to change something, check out whether it can be achieved without adding further dependencies. Also try to keep site configurable and add lab specific
-information only in the `_config.yml` and read it out in the template later.
-Don't hard code things.
+so if you want to change something, check out whether it can be achieved without adding further dependencies. Also try to keep the site configurable by adding lab specific
+information only in the `_config.yml` and reading it out in the template later.
+Don't hard code things!
 For adding javascript stick to [Standard style](https://standardjs.com/).
 
 If you add new images to your page you should add the sources to the `/_data/img_sources.yml` file. The sources will then be automatically displayed in the footer of the page.
