@@ -1,51 +1,84 @@
-<html lang="en-gb" dir="ltr">
+<!DOCTYPE HTML>
+<!--
+Linear by TEMPLATED
+templated.co @templatedco
+Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+	<title>Code for Osnabrück</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+<!--	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+	<script src="/assets/js/skel.min.js"></script>
+	<script src="/assets/js/skel-panels.min.js"></script>
+	<script src="/assets/js/init.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="/assets/css/skel-noscript.css" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+		<link rel="stylesheet" href="/assets/css/style-desktop.css" />
+	</noscript>
+</head>
+<body>
 
-    <head>
-        <title>{{ site.title }}</title>
+	<!-- Header -->
+	<div id="header">
+		{% include nav.html %}
+		<div class="container">
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content='{{ site.description }}'>
-        <meta name="keywords" content="{{ site.keywords | join: ',' }}">
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/img/favicon/site.webmanifest">
-        <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-
-        <link rel="stylesheet" href="/uikit/css/uikit.gradient.min.css">
-        <link rel="stylesheet" href="/uikit/css/tooltip.gradient.min.css">
-        <link rel="stylesheet" href="/css/main.css">
-    </head>
-
-    <body>
-      <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
-        {% include header.html %}
-
-        {% if page.page_class != 'blog' %}
-          <div id="background-pic"></div>
-        {% endif %}
-        <div class="page-content">
-          {{ content }}
-        </div>
-
-      </div>
-
-      <a href={{ site.github }}><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+			<!-- Logo -->
+			<div id="logo">
+				<h1><a href="#">   </a></h1>
+				<span class="tag">   </span>
+			</div>
+		</div>
+	</div>
+	<!-- Header -->
+	{{ content }}
+	
+	<!-- Tweet -->
+	<div id="tweet">
+		<div class="container">
+			<section>
+				<blockquote>&ldquo;Offene Daten sind Daten, die von jedermann frei benutzt, weiterverwendet und geteilt werden können.&rdquo;<a href="http://opendatahandbook.org/guide/de/what-is-open-data/"> opendatahandbook.org</a></blockquote>
+			</section>
+		</div>
+	</div>
 
 
-      {% include footer.html %}
+<!-- Footer -->
+<div id="footer">
+	<div class="container">
+		<section>
+			<!--- <header>
+				<h2>Mach mit!</h2>
+				<span class="byline">Schau vorbei und schreib uns.</span>
+			</header> -->
+			<ul class="contact">
+				<li><a href="https://www.twitter.com/codeforosna" class="fa fa-twitter"><span>Twitter</span></a></li>
+				<!-- <li class="active"><a href="https://facebook.com/" class="fa fa-facebook"><span>Facebook</span></a></li> -->
+				<li><a href="https://github.com/codeforosnabrueck" class="fa fa-github"><span>Github</span></a></li>
+				<!-- <li><a href="https://github.com/codeforosnabrueck" class="fa fa-meetup"><span>Meetup</span></a></li> -->
+			</ul>
+		</section>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-      <script src="/uikit/js/uikit.min.js"></script>
-      <script src="/uikit/js/tooltip.js"></script>
-      <script src="/js/main.js"></script>
-      <script src="/js/meetup.js"></script>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<section>
+			<a href="impressum">Impressum & Datenschutz</a>
+		</section>
+	</div>
+</div>
 
-    </body>
 
+
+<!-- Copyright -->
+<div id="copyright">
+	<div class="container">
+		<!-- Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>) 
+		Jekyll Template: <a href="http://cloudcannon.com">Cloud Cannon</a> -->
+		<p>Made with    <span class="fa fa-heart"></span>    with <a href="https://jekyllrb.com">Jekyll</a></p>
+	</div>
+</div>
+
+</body>
 </html>
