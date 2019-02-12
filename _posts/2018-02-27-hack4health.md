@@ -11,5 +11,5 @@ Jetzt kam das Urteil: Team Mercura ist gekrönt mit dem zweiten Platz! Der erste
 <br><br>
 <p>Danke an das RKI und das IKW, die dieses Event ermöglicht haben! Nächstes Event: Open Data Day 2018 in der Osnabrücker Bibliothek. Wir freuen uns euch dort zu sehen!</p>
 
-<p>Liebe Grüe, <br>
+<p>Liebe Grüße, <br>
 John</p>
