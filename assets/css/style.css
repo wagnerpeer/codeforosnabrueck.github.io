@@ -107,10 +107,14 @@
 		font-style: italic;
 	}
 	
-	p, ul, ol, dl, table
+	p, ol, dl, table
 	{
 		margin-bottom: 1em;
 	}
+
+    ul {
+        padding-left: 10px;
+    }
 
 	header
 	{
