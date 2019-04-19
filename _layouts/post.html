@@ -6,10 +6,26 @@ layout: default
 		<div id="content" class="container">
 			<div class="row">
 				<section class="8u -2u">
-					<a href="{{ site.prefix }}{{ page.url }}" class="image full"><img src="/assets/{{ page.featured }}" alt=""></a>
+                    <!--					<a href="{{ site.prefix }}{{ page.url }}" class="image full"><img src="/assets/{{ page.featured }}" alt=""></a> -->
 					<header>
 						<h2>{{ page.title }}</h2>
 					</header>
+
+					<p class="uk-article-meta">
+            		Veröffentlicht am {{page.date | date: "%d.%m.%Y"}} von {{page.author}}
+
+
+
+                    <!--      <a href="https://twitter.com/share" class="twitter-share-button  twitter" data-via="codeformuenster" data-count="none" data-related="codeformuenster"
+                           data-uk-tooltip
+                          title="Diesen Artikel twittern"
+                          >
+              <i class="uk-icon-twitter "></i></a> -->
+
+          			</p>
+
+
+
 					{{ page.content }}
 				</section>
 			</div>

@@ -6,33 +6,44 @@ layout: default
 <div id="featured">
 	<div class="container">
 		<header>
-			<h2>Willkommen bei Code for Osnabrück</h2>
+			<h1>Offene Daten für eine offene Stadt</h1>
 		</header>
-		<p>Wir sind <strong>Code for Osnabrück</strong>, eine Initiative der <a href="http://okfn.de">Open Knowledge Foundation Deutschland</a>. Wir setzen uns ein für Offene Daten und Civic Tech, wir schreiben Programme von Bürger*innen für Bürger*innen. Damit sind wir Teil des deutschlandweiten Netzwerks <a href="http://codefor.de/">Code for Germany</a>.
-		<hr />
-		<div class="row">
-			<section class="4u">
-				<span class="pennant"><span class="fa fa-gears"></span></span>
+		<p>Wir sind Code for Osnabrück, eine Initiative der <a href="http://okfn.de">Open Knowledge Foundation Deutschland</a>. Wir setzen uns ein für Offene Daten und Civic Tech, wir schreiben Programme von Bürger*innen für Bürger*innen. Damit sind wir Teil des deutschlandweiten Netzwerks <a href="http://codefor.de/">Code for Germany</a>.</p>
+	</div>
+</div>
+
+<div id="main">
+
+
+<div class="row">
+			<section class="column-3">
+				<span class="round"><span class="icon-big icon-cog-alt"></span></span>
 				<h3>Tech & Design</h3>
 				<p>Du bist Entwickler*in oder kennst dich mit Design aus? Mach mit und komm zu unseren zweiwöchentlichen Treffen.</p>
 				<!-- <a href="tech" class="button button-style1">Mehr lesen</a> -->
 			</section>
-			<section class="4u">
-				<span class="pennant"><span class="fa fa-bullhorn"></span></span>
+			<section class="column-3">
+				<span class="round"><span class="icon-big icon-megaphone"></span></span>
 				<h3>Politik & Journalismus</h3>
 				<p>Offene Daten sind in Osnabrück noch Zukunftsmusik. Komm vorbei und hilf uns, das in die Gegenwart zu holen!</p>
 				<!-- <a href="#" class="button button-style1">Mehr lesen</a> -->
 			</section>
-			<section class="4u">
-				<span class="pennant"><span class="fa fa-smile-o"></span></span>
+			<section class="column-3">
+				<span class="round"><span class="icon-big icon-smile"></span></span>
 				<h3>Bürgerinnen & Bürger</h3>
 				<p>Wir machen Civic Tech, also Technik von Bürger*innen für Bürger*innen. Komm vorbei und sag uns, was du brauchst!</p>
 				<!-- <a href="#" class="button button-style1">Mehr lesen</a> -->
 			</section>
 
 		</div>
-	</div>
 </div>
+
+
+<div id="featured-1">
+              {% include meetup.html %}
+
+	</div>
+
 
 <!-- Main -->
 	<div id="main">
@@ -63,21 +74,29 @@ layout: default
 				</section> -->
 			</div>
 
+<!--
+<div class="row">
+	<h1>Projekte</h1>
+
+{% include projekte.html %}
+</div>
+-->
+
 			<div class="row">
 				
-				<section class="6u">
+				<section class="column-2">
 					<a href="offenerbrief" class="image full"><img src="/assets/images/pic05.jpg" alt=""></a>
 					<header>
-						<h2>Offener Brief für offene Daten</h2>
+						<h2><a href="offenerbrief">Offener Brief für offene Daten</a></h2>
 					</header>
-					<p>Die Stadt Osnabrück könnte bald eine Informationsfreiheitssatzung bekommen. Wir finden das großartig und haben einen offenen Brief an die Mitglieder des Stadtrats geschrieben.</p>
+					<p>Die Stadt Osnabrück könnte bald eine Informationsfreiheitssatzung bekommen. Wir finden das großartig und haben einen offenen Brief an die Mitglieder des Stadtrats geschrieben.<a href="offenerbrief"> mehr lesen >></a></p>
 				</section>
-				<section class="6u">
+				<section class="column-2">
 					<a href="blog" class="image full"><img src="/assets/images/pic03.jpg" alt=""></a>
 					<header>
-						<h2>Blog</h2>
+						<h2><a href="blog">Blog</a></h2>
 					</header>
-					<p>Es passiert viel. Hier schreiben wir für euch auf, was wir machen und was sich in der Welt der offenen Daten so bewegt.</p>
+					<p>Es passiert viel. Hier schreiben wir für euch auf, was wir machen und was sich in der Welt der offenen Daten so bewegt.<a href="blog"> mehr lesen >></a></p>
 				</section>
 				<!-- <section class="6u">
 					<a href="glossar" class="image full"><img src="/assets/images/pic04.jpg" alt=""></a>
