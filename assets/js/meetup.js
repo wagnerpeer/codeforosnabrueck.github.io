@@ -26,7 +26,7 @@ setMeetupHtml = function(result) {
     var german_date = general_date.toLocaleDateString("de", date_options);
     $("#date span").html(german_date)
 
-    var german_time = general_date.toLocalTimeString("de");
+    var german_time = general_date.toLocaleTimeString("de");
     var time_options = {hour: "2-digit", minute: "2-digit"};
     $("#time span").html(german_time)
 
