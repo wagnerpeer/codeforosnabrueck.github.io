@@ -20,10 +20,16 @@
 
 
 setMeetupHtml = function(result) {
-    var international_date = new Date(result.time).toLocaleDateString();
-    international_date = international_date.split('/');
-    var euro_date = international_date.join('.');
-    $("#date span").html(euro_date)
+    var general_date = new Date(result.time)
+
+    var date_options = {weekday: "long", day: "2-digit", month: "long", year: "numeric"};
+    var german_date = general_date.toLocaleDateString("de", date_options);
+    $("#date span").html(german_date)
+
+    var german_time = general_date.toLocalTimeString("de");
+    var time_options = {hour: "2-digit", minute: "2-digit"};
+    $("#time span").html(german_time)
+
     $("#next-meetup #title").html(result.name);
     $("#next-meetup #venue").html(getVenueFromResult(result));
     $("#next-meetup #description").html(result.description);
