@@ -1,105 +1,28 @@
 ---
-title: codeforosna
+title: Willkommen 
 layout: default
 ---
-<!-- Featured -->
-<div id="featured">
-	<div class="container">
-		<header>
-			<h1>Offene Daten für eine offene Stadt</h1>
-		</header>
-		<p>Wir sind Code for Osnabrück, eine Initiative der <a href="http://okfn.de">Open Knowledge Foundation Deutschland</a>. Wir setzen uns ein für Offene Daten und Civic Tech, wir schreiben Programme von Bürger*innen für Bürger*innen. Damit sind wir Teil des deutschlandweiten Netzwerks <a href="http://codefor.de/">Code for Germany</a>.</p>
-	</div>
+<h1 style="text-align:center">Willkommen bei Code for Osnabrück!</h1>
+<p style="text-align: center; font-weight:bolder;">Wir sind ein offenes Stadtlabor und basteln an digitalen Lösungen für alle.</p>
+
+<div class="is-row" style="text-align: center">
+    <div class="is-col" style="background: #9d9d9d"><a href="/mitmachen.html">Mitmachen</a></div>
+    <div class="is-col"style="background: #9d9d9d"><a href="/wir.html">Informieren</a></div>
+    <div class="is-col"style="background: #9d9d9d"><a href="/blog.html">Blog</a></div>
 </div>
 
-<div id="main">
+<div> {% include meetup.html %} </div>
 
 
-<div class="row">
-			<section class="column-3">
-				<span class="round"><span class="icon-big icon-cog-alt"></span></span>
-				<h3>Tech & Design</h3>
-				<p>Du bist Entwickler*in oder kennst dich mit Design aus? Mach mit und komm zu unseren zweiwöchentlichen Treffen.</p>
-				<!-- <a href="tech" class="button button-style1">Mehr lesen</a> -->
-			</section>
-			<section class="column-3">
-				<span class="round"><span class="icon-big icon-megaphone"></span></span>
-				<h3>Politik & Journalismus</h3>
-				<p>Offene Daten sind in Osnabrück noch Zukunftsmusik. Komm vorbei und hilf uns, das in die Gegenwart zu holen!</p>
-				<!-- <a href="#" class="button button-style1">Mehr lesen</a> -->
-			</section>
-			<section class="column-3">
-				<span class="round"><span class="icon-big icon-smile"></span></span>
-				<h3>Bürgerinnen & Bürger</h3>
-				<p>Wir machen Civic Tech, also Technik von Bürger*innen für Bürger*innen. Komm vorbei und sag uns, was du brauchst!</p>
-				<!-- <a href="#" class="button button-style1">Mehr lesen</a> -->
-			</section>
-
-		</div>
+<div class="is-row">
+    <div class="is-col">
+        <a href="offenerbrief" style:"margin-bottom:10px"><img src="/assets/images/pic05.jpg" alt=""></a>
+		<h2><a href="offenerbrief">Offener Brief für offene Daten</a></h2>
+		<p>Die Stadt Osnabrück könnte bald eine Informationsfreiheitssatzung bekommen. Wir finden das großartig und haben einen offenen Brief an die Mitglieder des Stadtrats geschrieben.<a href="offenerbrief"> mehr lesen >></a></p>
+    </div>
+    <div class="is-col">
+        <a href="blog"><img src="/assets/images/pic03.jpg" alt=""></a>
+		<h2><a href="blog">Blog</a></h2>
+		<p>Es passiert viel. Hier schreiben wir für euch auf, was wir machen und was sich in der Welt der offenen Daten so bewegt.<a href="blog"> mehr lesen >></a></p>
+    </div>
 </div>
-
-
-<div id="featured-1">
-              {% include meetup.html %}
-
-	</div>
-
-
-<!-- Main -->
-	<div id="main">
-
-		<!-- <div class="container">
-			<header>
-					<h3>Projekte</h3>
-					<p> . </p>
-			</header>
-		</div> -->
-
-		<div id="content" class="container">
-
-			<div class="row">
-				<!-- <section class="6u">
-					<a href="tutorial-osm" class="image full"><img src="/assets/images/pic01.jpg" alt=""></a>
-					<header>
-						<h2>Tutorial: OpenStreetMap</h2>
-					</header>
-					<p>Wie kann man OpenStreetMap mit Python verbinden? Wir haben dafür ein kleines Tutorial gebaut, mit dem ihr ganz schnell mit offenen Kartendaten arbeiten könnt. </p>
-				</section>
-				<section class="6u">
-					<a href="stadtentwicklung" class="image full"><img src="/assets/images/pic02.jpg" alt=""></a>
-					<header>
-						<h2>Stadtentwicklung</h2>
-					</header>
-					<p>Die Stadt Osnabrück hat ihre Datensätze im Portal "Kosmos" veröffentlicht. Darin wird auch abgebildet, wie die Stadt ihre selbst gesteckten Ziele erreicht. Unsere Auswertung findet ihr hier. </p>
-				</section> -->
-			</div>
-
-
-
-			<div class="row">
-				
-				<section class="column-2">
-					<a href="offenerbrief" class="image full"><img src="/assets/images/pic05.jpg" alt=""></a>
-					<header>
-						<h2><a href="offenerbrief">Offener Brief für offene Daten</a></h2>
-					</header>
-					<p>Die Stadt Osnabrück könnte bald eine Informationsfreiheitssatzung bekommen. Wir finden das großartig und haben einen offenen Brief an die Mitglieder des Stadtrats geschrieben.<a href="offenerbrief"> mehr lesen >></a></p>
-				</section>
-				<section class="column-2">
-					<a href="blog" class="image full"><img src="/assets/images/pic03.jpg" alt=""></a>
-					<header>
-						<h2><a href="blog">Blog</a></h2>
-					</header>
-					<p>Es passiert viel. Hier schreiben wir für euch auf, was wir machen und was sich in der Welt der offenen Daten so bewegt.<a href="blog"> mehr lesen >></a></p>
-				</section>
-				<!-- <section class="6u">
-					<a href="glossar" class="image full"><img src="/assets/images/pic04.jpg" alt=""></a>
-					<header>
-						<h2>Glossar</h2>
-					</header>
-					<p>Civic Tech? Open Data? Viele Begriffe, hier erklären wir dir, was genau das heißt.</p>
-				</section> -->
-			</div>
-
-		</div>
-	</div>

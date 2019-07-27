@@ -3,20 +3,12 @@ title: Blog
 layout: default
 ---
 
-<!-- Main -->
-	<div id="main">
-		<div id="content" class="container">
 			{% for post in site.posts offset: 0 limit: 4 %}
-			<div class="row">
-				<section class="8u -2u">
-					<!-- <a href="{{ site.prefix }}{{ post.url }}" class="image full"><img src="/assets/{{ post.featured }}" alt=""></a> -->
-					<header>
-						<a href="{{ site.prefix }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
-					</header>
-					{{ post.excerpt }}
-					<a href="{{ site.prefix }}{{ post.url }}" class="button button-style1">Mehr lesen</a>
-				</section>
-			</div>
+    <div style="background: white; padding: 1.5em;">
+		<!-- <a href="{{ site.prefix }}{{ post.url }}" class="image full"><img src="/assets/{{ post.featured }}" alt=""></a> -->
+		<a href="{{ site.prefix }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
+			{{ post.excerpt }}
+		<a href="{{ site.prefix }}{{ post.url }}" class="button button-style1">Mehr lesen</a>
+</div>
+<hr>
 			{% endfor %}
-		</div>
-	</div>
