@@ -38,6 +38,6 @@ Wir sind für jeden über die folgenden Kanäle erreichbar:
 
 * https://www.twitter.com/codeforosna
 * https://github.com/codeforosnabrueck
-* https://www.meetup.com/CodeForOsnabrueck
-* <osnabrueck@codefor.de>
 * http://www.codeforosnabrueck.org
+* <osnabrueck@codefor.de>
+* https://codefor.de/osnabrueck/
